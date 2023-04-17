@@ -1,0 +1,681 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header seksjonen */
+header{
+    position: fixed;
+    height: 75px;
+    width: 100%; 
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+header.hide {
+    top: -100px;
+    transition: top 0.3s;
+}
+.logo img {
+    max-height: 80px;
+    max-width:  120px;
+    height: auto;
+}
+.navmenu {
+    display: flex;
+}
+.navmenu a{
+    color: #151515;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px; 
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navmenu a:hover{
+    transform: scale(1.3);
+    color: #e7ce10;
+}
+.navbar{
+    display: flex;
+    align-items: center; 
+}
+.navbar i{
+    margin-right: 20px;
+    color: #151515;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.navbar i:hover{
+    transform: scale(1.3);
+    color: #e7ce10;
+}
+/* Feature CSS */
+.section-f1 {
+    padding: 5px 350px;
+}
+
+#feature {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+#feature .fe-box {
+    width: 200px;
+    text-align: center;
+    padding: 15px 5px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f7e2ca;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;;
+}
+
+.fe-box img:hover {
+    box-shadow: 10px 10px 60px rgba(34, 21, 212, 0.11);
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 10px 8px 8px 10px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #34bed3;
+    background-color: #285f21;
+    font-weight: 700;
+}
+
+
+
+/* Hovedside seksjon */
+
+#menu-icon{
+    font-size: 33px;
+    color: #151515;
+    z-index: 10001;
+    cursor: pointer; 
+}
+section{
+    padding: 3% 6%;
+}
+.main-home{
+    width: 100;
+    height: 100vh;
+    background-image: url(./images/photo-1576201836106-db1758fd1c97.avif);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+
+}
+.main-text h5{
+    color: #e7ce10;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-text h1{
+    color: #000;
+    font-size: 60px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color: #6cd5ff;
+    font-size: 20px;
+    font-style: "sans-serif"; 
+    margin-bottom: 20px;
+}
+.main-btn{
+    display: inline-block;
+    color: #e7ce10;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #e7ce10;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color: #111;
+    color: #e7ce10;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: fixed;
+    top: 85%;
+    right: 11%;
+}
+.down i{
+    font-size: 25px;
+    color: #e7ce10;
+    border: 2px solid #e7ce10;
+    border-radius: 50px;
+    padding: 11px 11px;
+}
+.down i:hover{
+    background-color: #151515;
+    color: #e7ce10;
+    transition: all .42s ease;
+}
+
+
+.row img {
+    width:  400px;
+    height: 400px;
+    object-fit: cover;
+    }
+
+
+header.sticky{
+    background: #edbfbf9e;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 12px rgb(0 0 0 / 10%);
+}
+
+/* Tilbud seksjonen */
+.center-text h2 {
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center; 
+    padding: 3% 0%;
+}
+
+.center-text span {
+    color: #ca6969
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 3rem;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+.row img {
+    width: 300px;
+    height: 300px;
+    transition: all .40s;
+}
+
+.row img:hover {
+    transform: scale(0.85);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500; 
+    text-transform: uppercase;
+    background-color: #8f4848;
+    padding: 3px 10px;
+    border-radius: 2px; 
+}
+
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 22px;
+}
+
+.heart-icon:hover {
+    color: #a52a2a;
+}
+
+.ratting i{
+    color: #977215;
+    font-size: 18px;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    color: #151515;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CSS til kundeomtaler */
+
+.client-review {
+    background-color: #a9d4ff;
+}
+
+.reviews {
+    text-align: center;
+
+}
+
+.reviews h3 {
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reviews img {
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.reviews p {
+    color: #545454;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reviews h2 {
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+/* CSS til post/nyhetsseksjon */
+#sm-banner {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 5px;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url("./images/cute-funny-dog-blue-hat-light-background-shows-funny-tongue-domestic-thoroughbred-animal-posin_78492-8067.avif");
+    min-width: 700px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("./images/P4hoEa7ta1bGfbOUIIiD8QUhiBH68cDgnCsnM1ReR6rA.jpg");
+}
+
+#sm-banner .banner-box3 {
+    background-image: url("images/french-bulldog-posing-beach-with-sunglasses-3d-rendering_691560-3080.avif");
+}
+
+#sm-banner .banner-box4 {
+    background-image: url("images/fluffy-toy-texture-close-up_23-2149686892.avif");
+}
+
+#sm-banner h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 350;
+}
+
+#sm-banner h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#sm-banner span {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 450;
+    padding-bottom: 15px;
+}
+
+.knapp {
+    font-size: 12px;
+    font-weight: 550;
+    padding: 12px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: .22s;
+}
+
+#sm-banner .banner-box:hover button {
+    background: #d99f2b;
+    border: 1px solid #d99f2b;
+}
+
+.up-center-text h2 {
+    text-align: center;
+    color: #111;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Nyhetsbrev */
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("./images/ocean-sea-waves-with-white-foam-nature-landscape_107791-1563.avif");
+    background-repeat: no-repeat;
+    background-position: 30% 94%;
+    background-color: #d5edef;
+    padding: 75px 120px;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+.nyhetstekst h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 0px;
+    color: #fff;
+}
+
+.nyhetstekst p {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 0px;
+    color: #6c6b6b;
+    font-weight: 700;
+}
+
+.nyhetstekst p span {
+    color: #d38729;
+}
+
+#newsletter input {
+    height: 3rem;
+    padding: 0 1.3rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.form {
+    display: flex;
+    width: 35%;
+}
+.knapp1 {
+    font-size: 12px;
+    font-weight: 550;
+    padding: 12px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: .22s;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form button:hover {
+    background: #d99f2b;
+    border: 1px solid #d99f2b;
+}
+
+/* Kontakt seksjon */
+
+.contact {
+    background-color: #edbfbf9e;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: row;
+    gap: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.first-info img {
+    width: 160px;
+    height: auto;
+}
+
+.contact-info h4 {
+    color: #303030;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.contact-info p {
+    color: #656464;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.contact-info p:hover {
+    color: #ab2222;
+}
+
+.contact-info h2 {
+    color: #656464;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.social-icon i {
+    color: #656464;
+    margin-right: 8px;
+    font-size: 22px;
+    transition: all .42s;
+}
+
+.social-icon i:hover {
+    transform: scale(1.4)
+}
+
+
+.end-text {
+    text-align: center;
+    padding: 20px; 
+}
+
+.end-text p {
+    color: #111;
+    text-transform: capitalize;
+}
+
+/* Funskjonalitets CSS/Media query */
+@media only screen and (max-width: 799px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 100vh;
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 150px;
+        height: 130vh;
+        background: #e1c183;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a {
+        display: block;
+        margin: 18px 0;
+    }
+    .navmenu.open {
+        right: 0;
+    }
+}
+
+@media only screen and (max-width:890px) {
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+    .main-text h1 {
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-text p {
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-btn {
+        padding: 10px 20px; 
+        transition: .4s;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+    flex-direction: row;
+    }
+    .logo {
+    margin-bottom: 20px;
+    }
+
+    .navmenu {
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            width: 150px;
+            height: 130vh;
+            background: #e1c183;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 120px 30px;
+            transition: all .42s;
+        }
+    .navmenu li {
+    margin-bottom: 10px;
+    }
+    .nav-icon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+    .bx-menu {
+    display: block;
+    }
+    .main-text {
+        text-align: center;
+        padding: 50px 10px;
+      }
+      .main-text h1 {
+        font-size: 28px;
+        margin-top: 20px;
+      }
+      .main-text p {
+        font-size: 16px;
+      }
+      .main-btn {
+        font-size: 18px;
+        padding: 10px 20px;
+      }
+        #feature {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+        }
+        .fe-box {
+          width: 100%;
+          text-align: center;
+          margin: 20px 0;
+        }
+        .fe-box img {
+          max-width: 70%;
+          height: auto;
+        }
+        .fe-box h6 {
+          font-size: 1.2rem;
+          margin-top: 10px;
+        }
+      .products .row {
+        flex-direction: column;
+      }
+      .product-text {
+        text-align: center;
+      }
+      .price {
+        font-size: 18px;
+      }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .second-info {
+        margin-top: 20px;
+    }
+    }
+    
